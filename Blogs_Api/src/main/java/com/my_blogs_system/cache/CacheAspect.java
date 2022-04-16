@@ -28,9 +28,9 @@ public class CacheAspect {
     private RedisTemplate<String, String> redisTemplate;
 
     @Pointcut("@annotation(com.my_blogs_system.cache.Cache)")
-    public void pt(){}
+    public void pointCut(){}
 
-    @Around("pt()")
+    @Around("pointCut()")
     public Object around(ProceedingJoinPoint pjp){
         try {
             Signature signature = pjp.getSignature();
