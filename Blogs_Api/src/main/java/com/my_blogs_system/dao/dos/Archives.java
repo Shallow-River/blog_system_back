@@ -1,0 +1,12 @@
+package com.my_blogs_system.dao.dos;
+
+import lombok.Data;
+
+@Data
+public class Archives {
+    private Integer year;
+
+    private Integer month;
+
+    private Long count;
+}
